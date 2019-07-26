@@ -14,7 +14,6 @@ Route::group(['middleware' => ['api']], function(){
         Route::post('/question','QuestionController@store');
         Route::put('/question/{id}','QuestionController@update');
         Route::delete('/question/{id}','QuestionController@distroy');
-
         Route::post('/answers/{id}','AnswersController@store');
     });
 });

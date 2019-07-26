@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -16,7 +15,7 @@ class QuestionController extends Controller
         $this->validate($request,[
             'title' => 'required',
             'body' => 'required',
-            'tag_id' => 'required',
+            'tag' => 'required',
         ]);
         $question = $request->user()->Question()->create([
             'title' => $request->json('title'),
