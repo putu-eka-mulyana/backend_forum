@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('login');
 });
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', 'AdminController@getData');
+Route::delete('/home/{id}','AdminController@deleteQuestion')->name('question.destroy');
+Route::delete('/tag/{id}','AdminController@deleteTag')->name('tag.destroy');
+Route::post('/tag','AdminController@storeTag')->name('tag.store');

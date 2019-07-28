@@ -9,6 +9,7 @@ class Tag extends Model
     protected $fillable = [
         'tag_name',
     ];
+    public $timestamps = false;
     public function question()
     {
         return $this->morphByMany('App\Model\Question');

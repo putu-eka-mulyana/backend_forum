@@ -40,3 +40,23 @@ form.form-hapus > button {
   border: none;
   background-color: #f7f7f7;
 }
+span.tag {
+  background-color: #3b72ec;
+  padding: 2px 19px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 5px;
+}
+.tags {
+  float: right;
+}
+.hapus-tag {
+  transform: rotate(45deg);
+  font-size: 13px;
+}
+.answer-box {
+  border: 1px solid gray;
+  padding: 7px;
+}
